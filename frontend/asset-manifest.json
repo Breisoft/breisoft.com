@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/public-breisoft-com/static/css/main.2ea391df.css",
+    "main.js": "/public-breisoft-com/static/js/main.b5ce297f.js",
+    "static/js/709.71bc9add.chunk.js": "/public-breisoft-com/static/js/709.71bc9add.chunk.js",
+    "static/js/120.b66d650b.chunk.js": "/public-breisoft-com/static/js/120.b66d650b.chunk.js",
+    "static/media/slick.svg": "/public-breisoft-com/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/public-breisoft-com/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/public-breisoft-com/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "index.html": "/public-breisoft-com/index.html",
+    "static/media/slick.woff": "/public-breisoft-com/static/media/slick.295183786cd8a1389865.woff"
+  },
+  "entrypoints": [
+    "static/css/main.2ea391df.css",
+    "static/js/main.b5ce297f.js"
+  ]
+}
