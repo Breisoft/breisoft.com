@@ -5,17 +5,17 @@ import Main from 'layouts/Main';
 import Container from 'components/Container';
 import {
   About,
-  Advantages,
+  Feedback,
   Contact,
   Description,
   Hero,
-  PromoNumbers,
+  AltPromoNumbers,
+  CallToAction,
   Partners,
   Speakers,
-  VideoSection,
 } from './components';
 
-const Expo = () => {
+const Home = () => {
   return (
     <Main colorInvert={true}>
       <Hero />
@@ -25,32 +25,19 @@ const Expo = () => {
         </Container>
       </Box>
       <Container>
-        <PromoNumbers />
+        <AltPromoNumbers />
       </Container>
       <Divider />
       <Container>
-        <Advantages />
+        <Feedback />
       </Container>
       <Box bgcolor={'alternate.main'}>
         <Container>
-          <VideoSection />
+          <CallToAction />
         </Container>
       </Box>
-      <Container>
-        <Speakers />
-      </Container>
-      <Divider />
-      <About />
-      <Box bgcolor={'primary.main'}>
-        <Container paddingX={'0 !important'} maxWidth={1}>
-          <Partners />
-        </Container>
-      </Box>
-      <Container>
-        <Contact />
-      </Container>
     </Main>
   );
 };
 
-export default Expo;
+export default Home;

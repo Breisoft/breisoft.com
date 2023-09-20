@@ -5,6 +5,7 @@ import Button from '@mui/material/Button';
 import Link from '@mui/material/Link';
 import Typography from '@mui/material/Typography';
 import { useTheme } from '@mui/material/styles';
+import Logo from 'components/Logo';
 
 const Footer = () => {
   const theme = useTheme();
@@ -25,18 +26,9 @@ const Footer = () => {
             component="a"
             href="/"
             title="theFront"
-            width={80}
+            width={100}
           >
-            <Box
-              component={'img'}
-              src={
-                mode === 'light'
-                  ? 'https://assets.maccarianagency.com/the-front/logos/logo.svg'
-                  : 'https://assets.maccarianagency.com/the-front/logos/logo-negative.svg'
-              }
-              height={1}
-              width={1}
-            />
+            <Logo colorInvert={mode !== 'light'} />
           </Box>
           <Box display="flex" flexWrap={'wrap'} alignItems={'center'}>
             <Box marginTop={1} marginRight={2}>
@@ -50,17 +42,6 @@ const Footer = () => {
                 Home
               </Link>
             </Box>
-            <Box marginTop={1} marginRight={2}>
-              <Link
-                underline="none"
-                component="a"
-                href="/docs/introduction"
-                color="text.primary"
-                variant={'subtitle2'}
-              >
-                Documentation
-              </Link>
-            </Box>
             <Box marginTop={1}>
               <Button
                 variant="outlined"
@@ -70,7 +51,7 @@ const Footer = () => {
                 href="https://mui.com/store/items/the-front-landing-page/"
                 size="small"
               >
-                Purchase now
+                Contact Us
               </Button>
             </Box>
           </Box>
@@ -83,7 +64,7 @@ const Footer = () => {
           color="text.secondary"
           gutterBottom
         >
-          &copy; theFront. 2021, Maccarian. All rights reserved
+          &copy; BreiSoft LLC, 2023. All rights reserved
         </Typography>
         <Typography
           align={'center'}

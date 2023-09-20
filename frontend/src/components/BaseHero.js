@@ -1,11 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 import React from 'react';
 import Box from '@mui/material/Box';
-import Grid from '@mui/material/Grid';
-import TextField from '@mui/material/TextField';
-import Card from '@mui/material/Card';
-import Button from '@mui/material/Button';
-import Typography from '@mui/material/Typography';
 import { useTheme } from '@mui/material/styles';
 import PropTypes from 'prop-types';
 
@@ -13,13 +8,11 @@ import HeroParticles from './HeroParticles';
 
 import Container from 'components/Container';
 
-const BaseHero = ({ ContentComponent }) => {
+const BaseHero = ({ children }) => {
   const theme = useTheme();
 
   return (
     <Box
-      minHeight={300}
-      height={'auto'}
       position={'relative'}
       sx={{
         marginTop: -13,
@@ -50,7 +43,7 @@ const BaseHero = ({ ContentComponent }) => {
       />
 
       <Container position={'relative'} zIndex={2}>
-        <ContentComponent />
+        {children}
       </Container>
     </Box>
   );

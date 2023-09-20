@@ -1,6 +1,7 @@
 export { default as Home } from './Home';
 export { default as About } from './About';
-export { default as Expo } from './Expo';
+export { default as Portfolio } from './Portfolio';
+export { default as Chat } from './Chat';
 export { default as Categories } from './Categories';
 export { default as Cart } from './Cart';
 export { default as PasswordResetSimple } from './PasswordResetSimple';

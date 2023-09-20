@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import { useTheme } from '@mui/material/styles';
-import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 
 import Logo from 'components/Logo';
 import NavItem from './components/NavItem';
@@ -12,7 +11,7 @@ const SidebarNav = ({ pages }) => {
   const theme = useTheme();
   const { mode } = theme.palette;
 
-  const { categories: categoryPages, account: accountPages } = pages;
+  const { aboutUs, chat, portfolio } = pages;
 
   return (
     <Box>
@@ -21,7 +20,7 @@ const SidebarNav = ({ pages }) => {
           display={'flex'}
           component="a"
           href="/"
-          title="theFront"
+          title="breisoft"
           width={{ xs: 100, md: 120 }}
         >
           <Box height={1} width={1}>
@@ -31,24 +30,13 @@ const SidebarNav = ({ pages }) => {
       </Box>
       <Box paddingX={2} paddingY={2}>
         <Box>
-          <NavItem title={'Categories'} items={categoryPages} />
+          <NavItem title={aboutUs[0].title} items={aboutUs} />
         </Box>
         <Box>
-          <NavItem title={'Account'} items={accountPages} />
+          <NavItem title={chat[0].title} items={chat} />
         </Box>
-        <Box marginTop={1}>
-          <Button
-            size={'large'}
-            variant="contained"
-            color="primary"
-            fullWidth
-            component="a"
-            target="blank"
-            href="https://mui.com/store/items/the-front-landing-page/"
-          >
-            <ShoppingCartIcon />
-            Cart
-          </Button>
+        <Box>
+          <NavItem title={portfolio[0].title} items={portfolio} />
         </Box>
       </Box>
     </Box>

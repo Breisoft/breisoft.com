@@ -14,7 +14,7 @@ const Description = () => {
           color: 'common.white',
         }}
       >
-        Milan: the city of rising IT engineering
+        Breisoft: Pioneering Web Solutions
       </Typography>
       <Typography
         variant="h6"
@@ -25,11 +25,10 @@ const Description = () => {
           color: 'common.white',
         }}
       >
-        Milan is Italy's financial and industrial capital, as well one of the
-        world's leading cities of creative field. Having an important business
-        history and being the largest Italian industrial center, Milan is
-        definitely an attractive destination, with a big business opportunities,
-        for tech companies
+        At the crossroads of innovation and functionality, Breisoft stands as a
+        beacon for top-tier web development. With expertise in Django, React,
+        and web scraping, we deliver solutions that power the digital world.
+        Partner with us to transform your web visions into reality.
       </Typography>
     </Box>
   );

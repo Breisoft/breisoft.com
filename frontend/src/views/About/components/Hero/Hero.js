@@ -1,99 +1,88 @@
-import React, { useEffect } from 'react';
-import { alpha } from '@mui/material/styles';
 import Box from '@mui/material/Box';
-import Typography from '@mui/material/Typography';
+import { Grid } from '@mui/material';
+import { Typography } from '@mui/material';
+import BaseHero from 'components/BaseHero';
+import { Card } from '@mui/material';
+import { Avatar } from '@mui/material';
 
-import Container from 'components/Container';
-
-const Hero = () => {
-  useEffect(() => {
-    const jarallaxInit = async () => {
-      const jarallaxElems = document.querySelectorAll('.jarallax');
-      if (!jarallaxElems || (jarallaxElems && jarallaxElems.length === 0)) {
-        return;
-      }
-
-      const { jarallax } = await import('jarallax');
-      jarallax(jarallaxElems, { speed: 0.2 });
-    };
-
-    jarallaxInit();
-  });
-
-  return (
-    <Box
-      className={'jarallax'}
-      data-jarallax
-      data-speed="0.2"
-      position={'relative'}
-      minHeight={300} // Set this to 300 to match the first hero
-      height={'auto'}
-      height={750}
-      display={'flex'}
-      alignItems={'center'}
-      marginTop={-13}
-      paddingTop={13}
-      id="agency__portfolio-item--js-scroll"
+// Headline Block for the About Us Page
+const AboutUsHeadlineBlock = () => (
+  <Box marginBottom={4} data-aos="fade-up">
+    <Typography
+      variant="h3"
+      gutterBottom
+      sx={{
+        fontWeight: 900,
+        color: 'common.white',
+      }}
     >
-      <Box
-        className={'jarallax-img'}
-        sx={{
-          position: 'absolute',
-          objectFit: 'cover',
-          /* support for plugin https://github.com/bfred-it/object-fit-images */
-          fontFamily: 'object-fit: cover;',
-          top: 0,
-          left: 0,
-          width: '100%',
-          height: '100%',
-          zIndex: -1,
-          backgroundRepeat: 'no-repeat',
-          backgroundSize: 'cover',
-          backgroundPosition: 'center center',
-          backgroundImage:
-            'url(https://assets.maccarianagency.com/backgrounds/img52.jpg)',
-        }}
-      />
-      <Box
-        sx={{
-          position: 'absolute',
-          top: 0,
-          left: 0,
-          right: 0,
-          bottom: 0,
-          width: 1,
-          height: 1,
-          background: alpha('#161c2d', 0.4),
-          zIndex: 1,
-        }}
-      />
-      <Container position={'relative'} zIndex={2}>
-        <Box>
-          <Typography
-            variant="h2"
-            gutterBottom
-            sx={{
-              fontWeight: 900,
-              color: 'common.white',
-              textTransform: 'uppercase',
-            }}
-          >
-            About us
-          </Typography>
-          <Typography
-            variant="h6"
-            component="p"
-            color="text.primary"
-            sx={{
-              color: 'common.white',
-            }}
-          >
-            We are founded by a leading academic and researcher in the field of
-            Industrial Systems Engineering.
+      About Us
+    </Typography>
+    <Typography
+      variant="h6"
+      component="p"
+      color="text.primary"
+      sx={{
+        fontWeight: 500,
+        color: 'common.white',
+      }}
+    >
+      Founded in 2015, Breisoft LLC has been dedicated to creating innovative
+      digital solutions that stand the test of time. Our core values include
+      integrity, creativity, excellence, and customer satisfaction.
+    </Typography>
+  </Box>
+);
+
+// Team Introduction Block for the About Us Page
+const AboutUsTeamBlock = () => (
+  <Box padding={{ xs: 3, sm: 6 }} width={1} component={Card} dropShadow={1}>
+    <Typography
+      variant="h3"
+      gutterBottom
+      align="center"
+      sx={{
+        fontWeight: 1000,
+        color: '#377dff',
+      }}
+    >
+      Meet The Team
+    </Typography>
+
+    <Box display="flex" flexDirection={'column'}>
+      <Box display="flex" flexDirection={'row'} marginBottom={4}>
+        <Avatar
+          alt="Josh Breidinger"
+          src={'images/selfie.png'}
+          sx={{ width: 56, height: 56 }}
+        />
+        <Box marginLeft={2}>
+          <Typography variant="h6">Josh Breidinger</Typography>
+          <Typography variant="body2">
+            Founder & Leader Software Engineer
           </Typography>
         </Box>
-      </Container>
+      </Box>
     </Box>
+  </Box>
+);
+
+const Hero = () => {
+  return (
+    <BaseHero>
+      <Grid container spacing={4}>
+        <Grid item xs={12} md={6}>
+          <Box width={1} height="100%" display="flex" alignItems="center">
+            <AboutUsHeadlineBlock />
+          </Box>
+        </Grid>
+        <Grid item xs={12} md={6}>
+          <Box width={1} height="100%" display="flex" alignItems="center">
+            <AboutUsTeamBlock />
+          </Box>
+        </Grid>
+      </Grid>
+    </BaseHero>
   );
 };
 

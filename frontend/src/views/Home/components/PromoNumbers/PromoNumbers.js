@@ -4,28 +4,20 @@ import Typography from '@mui/material/Typography';
 
 export const mock = [
   {
-    title: 'attendees',
-    number: '70,000+',
+    title: '5-star reviews',
+    number: '100%',
   },
   {
-    title: 'countries',
-    number: '160+',
+    title: 'technologies',
+    number: '10+',
   },
   {
-    title: 'speakers',
-    number: '1,200+',
+    title: 'hours daily',
+    number: '10+',
   },
   {
-    title: 'journalists',
-    number: '2,500+',
-  },
-  {
-    title: 'CEO\'s',
-    number: '11,000+',
-  },
-  {
-    title: 'investors',
-    number: '1,200+',
+    title: 'lines of code written',
+    number: '10,000+',
   },
 ];
 

@@ -12,23 +12,8 @@ import Container from 'components/Container';
 
 const mock = [
   {
-    label: 'Phone',
-    value: '+39 659-657-0133',
-    icon: (
-      <svg
-        width={20}
-        height={20}
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 20 20"
-        fill="currentColor"
-      >
-        <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
-      </svg>
-    ),
-  },
-  {
     label: 'Email',
-    value: 'hi@maccarianagency.com',
+    value: 'contact@breisoft.com',
     icon: (
       <svg
         width={20}
@@ -44,7 +29,7 @@ const mock = [
   },
   {
     label: 'Address',
-    value: 'Via Venini 33, 20147',
+    value: 'Philadelphia, PA',
     icon: (
       <svg
         width={20}
@@ -74,9 +59,9 @@ const Contact = () => {
             Contact us
           </Typography>
           <Typography color="text.secondary">
-            Rather than worrying about switching offices every couple years, you
-            can instead stay in the same location and grow-up from your shared
-            coworking space to an office that takes up an entire floor.
+            At Breisoft, we're always eager to hear from you. Whether you have a
+            question, feedback, or just want to discuss your next big idea, our
+            doors are always open.
           </Typography>
         </Box>
         <Box
@@ -124,7 +109,7 @@ const Contact = () => {
         marginHeight={0}
         marginWidth={0}
         scrolling="no"
-        src="https://maps.google.com/maps?width=100%&height=100%&hl=en&q=Milan&ie=UTF8&t=&z=14&iwloc=B&output=embed"
+        src="https://maps.google.com/maps?width=100%&height=100%&hl=en&q=Philadelphia&ie=UTF8&t=&z=14&iwloc=B&output=embed"
         style={{
           minHeight: 300,
           filter:

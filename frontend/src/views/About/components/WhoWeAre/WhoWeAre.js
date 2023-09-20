@@ -5,6 +5,7 @@ import Box from '@mui/material/Box';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import Typography from '@mui/material/Typography';
 import Grid from '@mui/material/Grid';
+import { Divider } from '@mui/material';
 
 const WhoWeAre = () => {
   const theme = useTheme();
@@ -14,6 +15,17 @@ const WhoWeAre = () => {
 
   return (
     <Box>
+      <Typography
+        variant={'h3'}
+        gutterBottom
+        sx={{ fontWeight: 700, textAlign: 'center' }}
+      >
+        Breisoft
+      </Typography>
+      <Divider />
+      <br />
+      <br />
+
       <Grid container spacing={4} direction={isMd ? 'row' : 'column'}>
         <Grid
           item
@@ -28,10 +40,10 @@ const WhoWeAre = () => {
               Who are we?
             </Typography>
             <Typography component={'p'} color={'text.secondary'}>
-              Our sign up is simple. We only require your basic company
-              information and what type of data storage you want. Our sign up is
-              dead simple. We only require your basic company information and
-              what type of data storage you want.
+              Breisoft is an organization committed to excellence at every step.
+              We believe in continual growth, hard work, and exceeding
+              expectations consistently. Our commitment isn't fulfilled until
+              you're 100% satisfied.
             </Typography>
           </Box>
         </Grid>
@@ -48,10 +60,10 @@ const WhoWeAre = () => {
               Our process
             </Typography>
             <Typography component={'p'} color={'text.secondary'}>
-              We support bulk uploading via SQL, integrations with most data
-              storage products, or you can use our API. Simply select where
-              you'd like to transfer your data and we'll being the process of
-              migrating it instantly.
+              When you work with us, we delve deep to understand your company's
+              needs. We actively seek to ask the right questions, ensuring we
+              grasp your project requirements with full clarity. Our goal is to
+              anticipate your needs before they even arise.
             </Typography>
           </Box>
         </Grid>

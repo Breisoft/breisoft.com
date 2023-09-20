@@ -4,7 +4,6 @@ import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import { alpha, useTheme } from '@mui/material/styles';
 import MenuIcon from '@mui/icons-material/Menu';
-import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 
 import Logo from '../../../../components/Logo';
 
@@ -12,11 +11,7 @@ import { NavItem } from './components';
 
 const Topbar = ({ onSidebarOpen, pages, colorInvert = false }) => {
   const theme = useTheme();
-  const {
-    aboutUs: aboutUs,
-    account: accountPages,
-    categories: categoryPages,
-  } = pages;
+  const { aboutUs, chat, portfolio } = pages;
 
   return (
     <Box
@@ -39,39 +34,27 @@ const Topbar = ({ onSidebarOpen, pages, colorInvert = false }) => {
       <Box sx={{ display: { xs: 'none', md: 'flex' } }} alignItems={'center'}>
         <Box marginLeft={4}>
           <NavItem
-            title={'About Us'}
-            id={'about-is'}
+            title={aboutUs[0].title}
+            id={aboutUs[0].title}
             items={aboutUs}
             colorInvert={colorInvert}
           />
         </Box>
         <Box marginLeft={4}>
           <NavItem
-            title={'Categories'}
-            id={'category-pages'}
-            items={categoryPages}
+            title={chat[0].title}
+            id={chat[0].title}
+            items={chat}
             colorInvert={colorInvert}
           />
         </Box>
         <Box marginLeft={4}>
           <NavItem
-            title={'Account'}
-            id={'account-pages'}
-            items={accountPages}
+            title={portfolio[0].title}
+            id={portfolio[0].title}
+            items={portfolio}
             colorInvert={colorInvert}
           />
-        </Box>
-        <Box marginLeft={4}>
-          <Box
-            component={Button}
-            variant="contained"
-            color="primary"
-            size="large"
-            height={30}
-          >
-            <ShoppingCartIcon />
-            Cart
-          </Box>
         </Box>
       </Box>
       <Box sx={{ display: { xs: 'block', md: 'none' } }} alignItems={'center'}>

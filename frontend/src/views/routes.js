@@ -3,10 +3,11 @@ import React from 'react';
 import {
   Home as HomeView,
   About as AboutView,
+  Portfolio as PortfolioView,
   SigninSimple as SigninSimpleView,
   SignupSimple as SignupSimpleView,
   NotFound as NotFoundView,
-  Expo as ExpoView,
+  Chat as ChatView,
 } from 'views';
 
 const routes = [
@@ -15,12 +16,16 @@ const routes = [
     renderer: (params = {}) => <HomeView {...params} />,
   },
   {
-    path: '/expo',
-    renderer: (params = {}) => <ExpoView {...params} />,
-  },
-  {
     path: '/about',
     renderer: (params = {}) => <AboutView {...params} />,
+  },
+  {
+    path: '/chat',
+    renderer: (params = {}) => <ChatView {...params} />,
+  },
+  {
+    path: '/portfolio',
+    renderer: (params = {}) => <PortfolioView {...params} />,
   },
   {
     path: '/signin',
