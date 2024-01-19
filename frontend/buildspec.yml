@@ -19,6 +19,7 @@ phases:
   post_build:
     commands:
       - echo Build completed on `date`
+      - ls -l frontend/build
 artifacts:
   files:
     - '**/*'
