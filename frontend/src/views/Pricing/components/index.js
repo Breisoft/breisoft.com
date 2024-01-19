@@ -1,0 +1,10 @@
+export { default as About } from './About';
+export { default as Feedback } from './Feedback';
+export { default as Contact } from './Contact';
+export { default as Description } from './Description';
+export { default as Hero } from './Hero';
+export { default as AltPromoNumbers } from './AltPromoNumbers';
+export { default as PromoNumbers } from './PromoNumbers';
+export { default as Partners } from './Partners';
+export { default as Speakers } from './Speakers';
+export { default as CallToAction } from './CallToAction';

@@ -8,6 +8,7 @@ import {
   SignupSimple as SignupSimpleView,
   NotFound as NotFoundView,
   Chat as ChatView,
+  Pricing as PricingView,
 } from 'views';
 
 const routes = [
@@ -18,6 +19,10 @@ const routes = [
   {
     path: '/about',
     renderer: (params = {}) => <AboutView {...params} />,
+  },
+  {
+    path: '/pricing',
+    renderer: (params = {}) => <PricingView {...params} />,
   },
   {
     path: '/chat',
