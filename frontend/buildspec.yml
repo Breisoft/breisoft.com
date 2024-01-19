@@ -19,9 +19,8 @@ phases:
   post_build:
     commands:
       - echo Build completed on `date`
-      - echo Uploading build to S3 bucket...
 artifacts:
   files:
     - '**/*'
-  base-directory: 'build'
+  base-directory: 'frontend/build'
   discard-paths: yes
