@@ -2,13 +2,9 @@ version: 0.2
 
 phases:
   install:
+    runtime-versions:
+      nodejs: 14
     commands:
-      - echo Installing NVM...
-      - curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.0/install.sh | bash
-      - . ~/.nvm/nvm.sh
-      - nvm install 21.5.0
-      - nvm use 21.5.0
-      - node --version
       - echo Installing source NPM dependencies...
       - npm install
   pre_build:
@@ -22,6 +18,7 @@ phases:
   post_build:
     commands:
       - echo Build completed on `date`
+      - echo Uploading build to S3 bucket...
 artifacts:
   files:
     - '**/*'
