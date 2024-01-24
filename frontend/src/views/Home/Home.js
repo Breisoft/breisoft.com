@@ -4,15 +4,11 @@ import Divider from '@mui/material/Divider';
 import Main from 'layouts/Main';
 import Container from 'components/Container';
 import {
-  About,
-  Feedback,
-  Contact,
   Description,
   Hero,
+  Feedback,
   AltPromoNumbers,
   CallToAction,
-  Partners,
-  Speakers,
 } from './components';
 
 const Home = () => {
