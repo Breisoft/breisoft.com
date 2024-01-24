@@ -4,9 +4,9 @@ import Box from '@mui/material/Box';
 import { useTheme } from '@mui/material/styles';
 import PropTypes from 'prop-types';
 
-import HeroParticles from './HeroParticles';
-
 import Container from 'components/Container';
+
+const HeroParticles = React.lazy(() => import('./HeroParticles'));
 
 const BaseHero = ({ children }) => {
   const theme = useTheme();
@@ -19,7 +19,7 @@ const BaseHero = ({ children }) => {
         paddingTop: 13,
         backgroundColor: theme.palette.alternate.main,
         background:
-          'linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://as2.ftcdn.net/v2/jpg/03/25/01/55/1000_F_325015501_0OREXfdOKXVEkRb3CoULxDDMgGy9gPNW.jpg) no-repeat center',
+          'linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  no-repeat center',
         backgroundSize: 'cover',
         zindex: 2,
       }}
