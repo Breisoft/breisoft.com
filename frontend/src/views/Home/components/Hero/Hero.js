@@ -54,12 +54,14 @@ const Hero = () => {
           color: 'common.white',
         }}
       >
-        At Breisoft, we specialize in dynamic
-        <span style={{ color: '#44B78B' }}> Django</span> backends, interactive
+        At Breisoft, we specialize in reliable
+        <span style={{ color: '#44B78B' }}> Django</span> backends,
+        user-friendly
         <span style={{ color: '#61DAFB' }}> React </span>
-        interfaces, and insightful web scraping solutions. Our top-notch
-        software engineering services are trusted by startups and established
-        businesses alike.
+        interfaces, and scalable, affordable{' '}
+        <span style={{ color: '#ff9900' }}> aws </span> deployment. Our
+        top-notch software engineering services are trusted by startups and
+        established businesses alike.
       </Typography>
     </Box>
   );
