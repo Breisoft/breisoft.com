@@ -1,12 +1,10 @@
 import React from 'react';
 
-import {
-  Home as HomeView,
-  About as AboutView,
-  Portfolio as PortfolioView,
-  NotFound as NotFoundView,
-  Chat as ChatView,
-} from 'views';
+const HomeView = React.lazy(() => import('views/Home'));
+const AboutView = React.lazy(() => import('views/About'));
+const PortfolioView = React.lazy(() => import('views/Portfolio'));
+const NotFoundView = React.lazy(() => import('views/NotFound'));
+const ChatView = React.lazy(() => import('views/Chat'));
 
 const routes = [
   {
