@@ -58,7 +58,7 @@ const Hero = () => {
         <span style={{ color: '#44B78B' }}> Django</span> backends,
         user-friendly
         <span style={{ color: '#61DAFB' }}> React </span>
-        interfaces, and scalable, affordable{' '}
+        interfaces, and affordable{' '}
         <span style={{ color: '#ff9900' }}> aws </span> deployment. Our
         top-notch software engineering services are trusted by startups and
         established businesses alike.

@@ -4,11 +4,8 @@ import {
   Home as HomeView,
   About as AboutView,
   Portfolio as PortfolioView,
-  SigninSimple as SigninSimpleView,
-  SignupSimple as SignupSimpleView,
   NotFound as NotFoundView,
   Chat as ChatView,
-  Pricing as PricingView,
 } from 'views';
 
 const routes = [
@@ -21,24 +18,12 @@ const routes = [
     renderer: (params = {}) => <AboutView {...params} />,
   },
   {
-    path: '/pricing',
-    renderer: (params = {}) => <PricingView {...params} />,
-  },
-  {
     path: '/chat',
     renderer: (params = {}) => <ChatView {...params} />,
   },
   {
     path: '/portfolio',
     renderer: (params = {}) => <PortfolioView {...params} />,
-  },
-  {
-    path: '/signin',
-    renderer: (params = {}) => <SigninSimpleView {...params} />,
-  },
-  {
-    path: '/signup',
-    renderer: (params = {}) => <SignupSimpleView {...params} />,
   },
   {
     path: '/not-found-cover',
